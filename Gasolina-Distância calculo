@@ -1,0 +1,16 @@
+/Escreva um programa que calcule com quantos litros de gasolina é preciso
+/abastecer um veículo, dada a distância que se deseja percorrer e a quantidade
+/de quilômetros que o veículo faz por litro.
+
+public static void main(String[] args) {
+        Scanner ler = new Scanner(System.in);
+        double distancia;
+        double kmPL;
+        double resultado;
+        System.out.println("Digite A Distância Da Viagem:");
+        distancia = ler.nextDouble();
+        System.out.println("Digite Quantos Quilômetros Seu Veículo Faz Com 1 Litro:");
+        kmPL = ler.nextDouble();
+        resultado = distancia/kmPL;
+        System.out.println("Litros De Combustível Nescessário Para Viagem:"+resultado);
+    }
