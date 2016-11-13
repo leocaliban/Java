@@ -1,0 +1,12 @@
+//Escreva um programa que calcule a  área (lado*lado) e o perímetro (4*lado) de um  quadrado.  
+//O  programa  deve  começar  perguntando  ao  usuário  qual a medida do lado e encerrar informando sua área e perímetro.
+
+
+public static void main(String[] args) {
+        Scanner ler = new Scanner(System.in);
+        System.out.println("Digite A Medida Do Lado Do Quadrado:");
+        int lado = ler.nextInt();
+        int area = lado*lado;
+        int perimetro = 4*lado;
+        System.out.println("Área: "+area+"\nPerímetro: "+perimetro);
+    }
