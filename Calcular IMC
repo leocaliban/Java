@@ -1,0 +1,26 @@
+//Escreva  um  programa  que  calcule  o  IMC  de  uma  pessoa.  
+//Lembre-se  o  IMC  é o resultado  da  razão  entre  o  peso  da  pessoa  e  o  quadrado  da  altura  da  pessoa (peso/altura*altura). 
+//Ao fim, o programa deve exibir uma mensagem que depende do valor do IMC calculado.  
+
+
+public static void main(String[] args) {
+        Scanner ler = new Scanner(System.in);
+        double altura;
+        double peso;
+        double IMC;
+        System.out.println("Digite Sua Altura:");
+        altura = ler.nextDouble();
+        System.out.println("Digite Seu Peso:");
+        peso = ler.nextDouble();
+        IMC = peso/(altura*altura);
+        if (IMC <20)
+            System.out.println("Abaixo Do Peso.");
+        else if (IMC >=20 && IMC <25)
+            System.out.println("Peso Normal.");
+        else if (IMC >=25 && IMC <30)
+            System.out.println("Sobre Peso.");
+        else if (IMC >=30 && IMC <40)
+            System.out.println("Obeso.");
+        else if (IMC >= 40)
+            System.out.println("Obeso Mórbido.");
+    }
