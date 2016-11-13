@@ -1,0 +1,20 @@
+//Uma loja está fazendo liquidação. Faça um programa que leia o percentual que deve  ser  descontado 
+//e  o  preço  original  do  produto  e  imprima  o preço  que  o cliente deve pagar.
+
+public static void main(String[] args) {
+        Scanner ler = new Scanner(System.in);
+        double porcentagemDesconto;
+        double valorProd;
+        double desconto;
+        double resultado;
+        
+        System.out.println("Digite A Porcentagem Do Desconto:");
+        porcentagemDesconto = ler.nextDouble();
+        System.out.println("Digite O Valor Do Produto:");
+        valorProd = ler.nextDouble();
+        
+        desconto = (valorProd*porcentagemDesconto)/100;
+        resultado = valorProd-desconto;
+        System.out.println("Seu Produto Teve "+porcentagemDesconto+"% De Desconto"
+                + " O Produto Ficou Por "+resultado+" Reais.");
+    }
