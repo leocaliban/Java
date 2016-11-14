@@ -1,0 +1,19 @@
+//Escreva  um  programa  em  que  você  lê  10  números  e,  ao  final,  imprima-os  em ordem  crescente 
+
+
+    public static void main(String[]args){
+        Scanner ler = new Scanner (System.in);
+        
+        int [] array;
+        array = new int [10];       
+        for(int i = 0;i<array.length;i++){
+            int c = i+1;
+            System.out.println("Digite O "+c+"º Número:");
+            int num = ler.nextInt();
+            array[i]=num;            
+        }
+        Arrays.sort(array);
+        System.out.println("Ordem Crescente.");
+        for(int i = 0;i<array.length;i++)
+            System.out.println(array[i]);
+    }
