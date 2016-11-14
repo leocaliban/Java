@@ -1,0 +1,22 @@
+//Escreva  um  programa  que  leia  um  número  inteiro  positivo  n  e  em  seguida  imprima linhas do chamado Triangulo de Floyd
+
+import java.util.Scanner;
+public class Floyd {
+    public static void main(String[] args) {
+        Scanner ler = new Scanner (System.in);
+        int entrada;
+        int a;
+        int b;
+        int contador = 0;	
+        System.out.println("Digite Um Valor Inteiro Positivo:");
+        entrada = ler.nextInt();
+	
+        for (a=1;a<=entrada;a++){
+            for (b=1;b<=a;b++){
+        	    contador++;
+        	    System.out.print(" "+contador);
+            }
+	          System.out.println();
+        }
+    }  
+}
