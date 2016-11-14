@@ -1,0 +1,12 @@
+//Escreva um programa que gere dois números aleatórios, o primeiro entre 0 e 100 e o segundo entre 51 e 100, em seguida, 
+//imprima o maior desses dois números elevado ao cubo 
+
+
+public static void main(String[]args){
+        
+        int num1 = (int)(Math.random()*101);
+        int num2 = (int)(Math.random()*50)+51;
+        int maior = Math.max(num1,num2);
+        int cubo = (int) Math.pow(maior,3);      
+        System.out.println(cubo);
+    }
