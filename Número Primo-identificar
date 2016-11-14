@@ -1,0 +1,20 @@
+//Escreva um programa que leia um número e determine se ele é primo.
+
+
+public static void main(String[]args){
+        Scanner ler = new Scanner (System.in);
+        
+        int numPrimo;
+        int divisores = 0;
+        System.out.println("Digite Um Número:");
+        numPrimo = ler.nextInt();
+        
+        for(int i = 1;i<=numPrimo;i++){
+            if(numPrimo % i == 0)
+                divisores++; 
+        }
+        if (divisores == 2)
+            System.out.println("O Número É Primo.");
+        else
+            System.out.println("O Número Não É Primo.");
+    }
